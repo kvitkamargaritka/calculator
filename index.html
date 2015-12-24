@@ -4,91 +4,55 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
 
-    <script src="/src/js/vendor/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="src/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="src/js/app.js"></script>
 
-    <style>
-
-        .dev {
-            margin: 50px auto;
-        }
-
-        .wrap {
-            width: 400px;
-            margin: 5px auto;
-        }
-
-        .result-field {
-            width: 165px;
-            height: 20px;
-            background-color: #909090;
-            outline: none;
-        }
-
-        .btn {
-            outline: none;
-            font-size: 20px;
-            width: 40px;
-        }
-
-        .zero {
-            width: 85px;
-            background-color: #E0E0E0;
-        }
-
-        .bg-grey {
-            background-color: #E0E0E0;
-        }
-
-        .bg-orange {
-            background-color: #F69332;
-            color: #ffffff;
-        }
-
-    </style>
 </head>
 <body>
 
 <div class="dev">
 
-    <div class="wrap">
-        <input class="result-field" type="text" value=""/>
+    <div class="calculator">
+        <div class="wrap">
+            <input class="field" type="text" value=""/>
+        </div>
+
+        <div class="wrap">
+            <input class="btn clear" type="button" value="C"/>
+            <input class="btn operators" type="button" value="+/-"/>
+            <input class="btn operators" type="button" value="%"/>
+            <input class="btn btn__orange operators" type="button" value="/"/>
+        </div>
+
+        <div class="wrap">
+            <input class="btn numbers" type="button" value="7"/>
+            <input class="btn numbers" type="button" value="8"/>
+            <input class="btn numbers" type="button" value="9"/>
+            <input class="btn btn__orange operators" type="button" value="*"/>
+        </div>
+
+        <div class="wrap">
+            <input class="btn numbers" type="button" value="4"/>
+            <input class="btn numbers" type="button" value="5"/>
+            <input class="btn numbers" type="button" value="6"/>
+            <input class="btn btn__orange operators" type="button" value="-"/>
+        </div>
+
+        <div class="wrap">
+            <input class="btn numbers" type="button" value="1"/>
+            <input class="btn numbers" type="button" value="2"/>
+            <input class="btn numbers" type="button" value="3"/>
+            <input class="btn btn__orange operators" type="button" value="+"/>
+        </div>
+
+        <div class="wrap">
+            <input class="btn zero numbers" type="button" value="0"/>
+            <input class="btn" type="button" value="."/>
+            <input class="btn btn__orange equals" type="button" value="="/>
+        </div>
     </div>
 
-    <div class="wrap">
-        <input class="btn bg-grey" type="button" value="C"/>
-        <input class="btn bg-grey" type="button" value="+/-"/>
-        <input class="btn bg-grey" type="button" value="%"/>
-        <input class="btn bg-orange" type="button" value="/"/>
-    </div>
-
-    <div class="wrap">
-        <input class="btn bg-grey" type="button" value="7"/>
-        <input class="btn bg-grey" type="button" value="8"/>
-        <input class="btn bg-grey" type="button" value="9"/>
-        <input class="btn bg-orange" type="button" value="*"/>
-    </div>
-
-    <div class="wrap">
-        <input class="btn bg-grey" type="button" value="4"/>
-        <input class="btn bg-grey" type="button" value="5"/>
-        <input class="btn bg-grey" type="button" value="6"/>
-        <input class="btn bg-orange" type="button" value="-"/>
-    </div>
-
-    <div class="wrap">
-        <input class="btn bg-grey" type="button" value="1"/>
-        <input class="btn bg-grey" type="button" value="2"/>
-        <input class="btn bg-grey" type="button" value="3"/>
-        <input class="btn bg-orange" type="button" value="+"/>
-    </div>
-
-
-    <div class="wrap">
-        <input class="btn zero" type="button" value="0"/>
-        <input class="btn bg-grey" type="button" value="."/>
-        <input class="btn bg-orange" type="button" value="="/>
-    </div>
 
 </div>
 
